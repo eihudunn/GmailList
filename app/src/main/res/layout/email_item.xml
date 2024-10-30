@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="8dp">
+
+    <TextView
+        android:id="@+id/sender_icon"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:gravity="center"
+        android:background="@drawable/circle_background"
+        android:textColor="#FFFFFF"
+        android:textSize="18sp"
+        android:text="A"/>
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="0dp"
+        android:layout_weight="1"
+        android:layout_height="wrap_content"
+        android:paddingStart="10dp">
+
+        <TextView
+            android:id="@+id/sender_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Sender Name"
+            android:textStyle="bold"
+            android:textSize="16sp"/>
+
+        <TextView
+            android:id="@+id/email_subject"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Email Subject"
+            android:textSize="14sp"
+            android:maxLines="1"/>
+
+        <TextView
+            android:id="@+id/email_content"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Email content preview..."
+            android:textSize="13sp"
+            android:maxLines="1"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical">
+
+        <TextView
+            android:id="@+id/email_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="12:34 PM"
+            android:textSize="12sp"
+            android:layout_marginBottom="4dp"/>
+
+        <ImageView
+            android:id="@+id/star_icon"
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:src="@drawable/baseline_star_border_24"
+            android:contentDescription="Star icon"
+            android:layout_marginLeft="20dp"
+            android:clickable="true"/>
+    </LinearLayout>
+</LinearLayout>
